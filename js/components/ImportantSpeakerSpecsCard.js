@@ -10,7 +10,7 @@ function createImportantSpeakerSpectsCard({ details, imageUrl }) {
 
     // Add content below the image
     card.innerHTML +=
-        '<div class="card__container">' +
+        '<div class="card__container height-container-speakers">' +
         '<div class="card__content div-row">' +
         // Add details if available
         (details ? '<p class="card__details text-center w-100">' + details + '</p>' : '') +

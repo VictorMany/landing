@@ -10,7 +10,7 @@ function createServicesAndSupportCard({ title, details, imageUrl, links }) {
 
     // Add content below the image
     card.innerHTML +=
-        '<div class="card__container">' +
+        '<div class="card__container height-container-services">' +
         '<div class="card__content">' +
         // Add title if available
         (title ? '<div class="card__title">' + title + '</div>' : '') +

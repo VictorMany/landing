@@ -71,12 +71,13 @@
 
 
             <div class="row row-buttons">
-                <button> Types of Speakers  </button>
-                <button> Commercial Speakers  </button>
-                <button> Receivers and Amplifiers  </button>
-                <button> Important Speaker Specs  </button>
-                <button> Accessories  </button>
-                <button> Resources  </button>
+                <a href="#speakers"><button>Types of Speakers</button></a>
+                <a href="#speakers"><button>Commercial Speakers</button></a>
+                <a href="#amplifiers"><button>Receivers and Amplifiers</button></a>
+                <a href="#specs"><button>Important Speaker Specs</button></a>
+                <a href="#accessories"><button>Accessories</button></a>
+                <a href="#services"><button>Resources</button></a>
+
             </div>
         </div>
 
@@ -92,8 +93,11 @@
                 class="w-100 row-buttons"
                 style="margin-bottom: 22px;"
             >
-                <button class="active-button"> Residential Speakers  </button>
-                <button> Commercial Speakers  </button>
+                <button
+                    class="active-button"
+                    onclick="toggleActive(this)"
+                >Residential Speakers</button>
+                <button onclick="toggleActive(this)">Commercial Speakers</button>
             </div>
         </div>
 

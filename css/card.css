@@ -1,36 +1,30 @@
+/* Color variables */
 :root {
     --primary-color: #002856;
     --link-color: #006AE3;
     --background-light: #F7F7F7;
     --white-color: #FFF;
+    --grey-color: #ECECEC;
+    --background-light: #F7F7F7;
 }
 
-/* Estilo para las tarjetas */
-.card {
-    margin: 10px;
-    width: calc(50% - 20px);
-    box-sizing: border-box;
-    overflow: hidden;
-    background: var(--white-color);
-}
-
+/* Container for the card */
 .card__container {
     display: flex;
     padding: 20px 27px;
     flex-direction: column;
     align-items: flex-start;
-    /* Permite que el contenedor crezca según el contenido */
 }
 
-/* Contenido de la tarjeta */
+/* Card content */
 .card__content {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    /* Hace que .card__content ocupe todo el espacio vertical disponible */
+    flex: 1;
 }
 
-/* Título de la tarjeta */
+/* Card title */
 .card__title {
     color: var(--primary-color);
     font-feature-settings: 'clig' off, 'liga' off;
@@ -41,7 +35,7 @@
     margin-bottom: 10px;
 }
 
-/* Detalles de la tarjeta */
+/* Card details */
 .card__details {
     color: var(--primary-color);
     font-size: 14px;
@@ -51,7 +45,7 @@
     margin-top: 0;
 }
 
-/* Subtítulo de la tarjeta */
+/* Card subtitle */
 .card__subtitle {
     color: var(--primary-color);
     font-size: 14px;
@@ -60,23 +54,33 @@
     line-height: 22px;
 }
 
-/* Enlaces de la tarjeta */
+/* Card links */
 .card__links {
     color: var(--link-color);
     font-size: 14px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
+    margin-top: auto;
 }
 
-/* Contenedor de tarjetas pequeñas */
+/* Container for speaker cards */
+.card {
+    margin: 10px;
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+    overflow: hidden;
+    background: var(--white-color);
+}
+
+/* Container for service cards */
 .flex-service-cards {
     width: calc(25%);
     box-sizing: border-box;
     overflow: hidden;
 }
 
-/* Contenedor de tarjetas pequeñas con especificaciones */
+/* Container for small cards with specifications */
 .flex-specs-cards {
     margin: 10px;
     width: calc(20% - 20px);
@@ -84,7 +88,7 @@
     overflow: hidden;
 }
 
-/* Tarjeta con secciones */
+/* Card with sections */
 .flex-receivers {
     margin: 10px;
     width: calc(50% - 20px);
@@ -93,7 +97,7 @@
     background: var(--background-light);
 }
 
-/* Título grande de la tarjeta con secciones */
+/* Big title of the card with sections */
 .card__bigtitle {
     color: var(--primary-color);
     font-family: "Nunito Sans";
@@ -103,7 +107,7 @@
     line-height: 46px;
 }
 
-/* Título de sección de la tarjeta con secciones */
+/* Section title of the card with sections */
 .card__title-section {
     color: #000;
     font-feature-settings: 'clig' off, 'liga' off;
@@ -115,15 +119,14 @@
     padding-bottom: 1rem;
 }
 
-/* Imagen de la tarjeta */
-.card__image {
+/* Image in the card for the diferente sections */
+.image-speakers {
     background-size: cover;
     background-position: center;
     min-width: 790px;
     height: 300px;
 }
 
-/* Imagen de tarjetas de receptores y amplificadores */
 .image_receivers_amplifiers {
     min-width: 789px;
     min-height: 380px;
@@ -132,7 +135,6 @@
     background-position: center;
 }
 
-/* Imagen de tarjetas de especificaciones */
 .image_specs {
     min-width: 310px;
     height: 300px;
@@ -141,11 +143,81 @@
     background-position: center;
 }
 
-/* Imagen de tarjetas de servicios */
 .image_services {
     min-width: 400px;
     height: 400px;
     align-self: stretch;
     background-size: cover;
-    background-position: center;
+    background-position: right center;
+}
+
+/* Specific heights for card containers */
+.height-container-services {
+    height: calc(100% - 440px);
+}
+
+.height-container-speakers {
+    height: calc(100% - 340px);
+}
+
+.height-container-receivers_amplifiers {
+    height: calc(100% - 420px);
+}
+
+
+/*-- colors for cards */
+.grey {
+    background-color: var(--grey-color);
+}
+
+.white {
+    background-color: var(--background-light);
+}
+
+
+@media (max-width: 790px) {
+
+    .card,
+    .flex-receivers {
+        width: 100%;
+    }
+
+    .flex-specs-cards {
+        width: 100%;
+    }
+
+    .flex-service-cards {
+        width: 100%;
+    }
+
+    .image-speakers,
+    .image_receivers_amplifiers,
+    .image_specs,
+    .image_services {
+        min-width: 100%;
+    }
+}
+
+
+@media (max-width: 1060px) and (min-width: 791px) {
+
+    .card,
+    .flex-receivers {
+        width: 100%;
+    }
+
+    .flex-specs-cards {
+        width: calc(50% - 20px);
+    }
+
+    .flex-service-cards {
+        width: 100%;
+    }
+
+    .image-speakers,
+    .image_receivers_amplifiers,
+    .image_specs,
+    .image_services {
+        min-width: 100%;
+    }
 }

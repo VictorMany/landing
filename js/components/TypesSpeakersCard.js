@@ -6,11 +6,11 @@ function createTypeSpeakersCard({ title, subtitle = 'Applications', details, app
     card.className = 'card';
 
     // Add an image at the top that spans the full width
-    card.innerHTML += '<div class="card__image" style="background-image: url(' + imageUrl + ');"></div>';
+    card.innerHTML += '<div class="image-speakers" style="background-image: url(' + imageUrl + ');"></div>';
 
     // Add content below the image
     card.innerHTML +=
-        '<div class="card__container">' +
+        '<div class="card__container height-container-speakers">' +
         '<div class="card__content">' +
         // Add title if available
         (title ? '<div class="card__title">' + title + '</div>' : '') +

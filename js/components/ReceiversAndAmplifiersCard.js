@@ -10,7 +10,7 @@ function createReceiversAndAmplifiersCard({ title, sections, details, imageUrl, 
 
     // Add content below the image
     card.innerHTML +=
-        '<div class="card__container">' +
+        '<div class="card__container height-container-receivers_amplifiers">' +
         '<div class="card__content">' +
         // Add title if available
         (title ? '<div class="card__bigtitle">' + title + '</div>' : '') +
