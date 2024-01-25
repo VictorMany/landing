@@ -1,0 +1,115 @@
+.card {
+    margin: 10px;
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+    overflow: hidden;
+    background: #FFF;
+}
+
+.card__image {
+    background-size: cover;
+    background-position: center;
+    /* width: 790px; */
+    height: 250px;
+    /* Agrega esta línea para establecer el borde */
+}
+
+.card__container {
+    display: flex;
+    padding: 20px 27px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card__title {
+    color: #002856;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+    margin-bottom: 10px;
+}
+
+.card__details {
+    color: #002856;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 0;
+}
+
+.card__subtitle {
+    color: #002856;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.card__links {
+    color: #006AE3;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+/*-- SPECIFIC FOR THE SMALL CARD */
+.small-card {
+    margin: 10px;
+    width: calc(25% - 20px);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* -- SPECIFIC FOR THE CARD WITH SECTIONS*/
+.card__bigtitle {
+    color: #002856;
+    /* H2/Heading  */
+    font-family: "Nunito Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46px;
+}
+
+.card-with-sections {
+    margin: 10px;
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+    overflow: hidden;
+    background: #F7F7F7;
+}
+
+.card__image-with-sections {
+    background-size: cover;
+    background-position: center;
+    /* width: 790px; */
+    height: 300px;
+    /* Agrega esta línea para establecer el borde */
+}
+
+.card__title-section {
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.card__sections {
+    padding-bottom: 1rem;
+}

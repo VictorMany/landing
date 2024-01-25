@@ -1,0 +1,59 @@
+/* Importa la fuente Nunito Sans desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&display=swap');
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+
+}
+
+.row {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.title-section {
+    width: 100%;
+    color: #002856;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46px;
+}
+
+.text-center {
+    width: 100% !important;
+    text-align: center;
+}
+
+#speakers {
+    background-color: #F7F7F7;
+    padding: 120px;
+}
+
+#amplifiers {
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+#specs {
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+#accessories {
+    padding-left: 120px;
+    padding-right: 120px;
+}
