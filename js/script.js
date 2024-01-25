@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var accessoriesDiv = document.getElementById('accessories');
     speakerAccessoriesItems.forEach(function (item) {
-        accessoriesDiv.appendChild(createReceiversAndAmplifiersCard(item));
+        accessoriesDiv.appendChild(createAccessoriesCard(item));
     });
 
     var servicesDiv = document.getElementById('services');

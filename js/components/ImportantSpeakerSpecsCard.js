@@ -2,8 +2,8 @@
 function createImportantSpeakerSpectsCard({ details, imageUrl }) {
     // Create a new div element for the card
     var card = document.createElement('div');
-    // Add the 'flex-specs-cards' class to the card
-    card.className = 'flex-specs-cards';
+    // Add the 'column-specs-cards' class to the card
+    card.className = 'column-specs-cards';
 
     // Add an image at the top that spans the full width
     card.innerHTML += '<div class="image_specs" style="background-image: url(' + imageUrl + ');"></div>';
@@ -13,7 +13,7 @@ function createImportantSpeakerSpectsCard({ details, imageUrl }) {
         '<div class="card__container height-container-speakers">' +
         '<div class="card__content div-row">' +
         // Add details if available
-        (details ? '<p class="card__details text-center w-100">' + details + '</p>' : '') +
+        (details ? '<p class="card__specs-details text-center w-100">' + details + '</p>' : '') +
         '</div>' +
         '</div>';
 
