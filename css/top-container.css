@@ -88,4 +88,9 @@ a.link {
         padding: 10px;
         gap: 10px;
     }
+
+    .top-details {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
