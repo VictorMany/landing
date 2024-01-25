@@ -1,6 +1,21 @@
 /* Importa la fuente Nunito Sans desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&display=swap');
 
+/* Define variables para colores */
+:root {
+    --primary-color: #002856;
+    --link-color: #006AE3;
+    --background-light: #F7F7F7;
+    --white-color: #FFF;
+    --grey-color: #ECECEC;
+    --button-border-color: #004DA6;
+    --button-background: #FFF;
+    --button-text-color: #004DA6;
+    --active-button-border-color: #004DA6;
+    --active-button-background: #002856;
+    --active-button-text-color: #FFF;
+}
+
 body {
     font-family: 'Nunito Sans', sans-serif;
     margin: 0;
@@ -11,8 +26,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    height: 100%;
     margin: 0 auto;
-
 }
 
 .row {
@@ -21,39 +36,81 @@ body {
     margin-bottom: 20px;
     width: 100%;
     flex-wrap: wrap;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.div-row {
+    display: flex;
+    width: 100%;
 }
 
 .title-section {
     width: 100%;
-    color: #002856;
+    color: var(--primary-color);
     text-align: center;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: 46px;
+    margin-top: 45px;
+    margin-bottom: 45px;
 }
 
 .text-center {
-    width: 100% !important;
     text-align: center;
 }
 
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.grey {
+    background-color: var(--grey-color);
+}
+
+.white {
+    background-color: var(--background-light);
+}
+
+button {
+    border-radius: 6px;
+    border: 1px solid var(--button-border-color);
+    background: var(--button-background);
+    display: flex;
+    height: 38px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--button-text-color);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.active-button {
+    border-radius: 4px;
+    border: 1px solid var(--active-button-border-color);
+    background: var(--active-button-background);
+    color: var(--active-button-text-color);
+}
+
+p {
+    margin: inherit;
+}
+
 #speakers {
-    background-color: #F7F7F7;
-    padding: 120px;
+    background-color: var(--background-light);
 }
 
-#amplifiers {
-    padding-left: 120px;
-    padding-right: 120px;
-}
-
-#specs {
-    padding-left: 120px;
-    padding-right: 120px;
-}
-
-#accessories {
-    padding-left: 120px;
-    padding-right: 120px;
+#services {
+    padding-left: 130px;
+    padding-right: 130px;
 }

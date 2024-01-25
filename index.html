@@ -13,6 +13,10 @@
     >
     <link
         rel="stylesheet"
+        href="./css/top-container.css"
+    >
+    <link
+        rel="stylesheet"
         href="./css/card.css"
     >
     <title>Landing Page</title>
@@ -25,10 +29,72 @@
         class="container"
     >
         <div
+            class="row top-container"
+            style="margin-bottom: 0;"
+        >
+            <div
+                class="topImg"
+                style="background-image: url('./assets/topImg.jpeg');"
+            >
+                <div class="container-text h-100">
+                    <div class="top-title">
+                        Speaker
+                        <br>
+                        <br>
+                        Buying Guide 
+                    </div>
+                    <div class="top-subtitle">
+                        Discover the different types, features,
+                        <br>
+                        specifications and more 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div
+                class="title-section"
+                style="margin-bottom: 23px; margin-top: 69px"
+            >A Guide to Speakers for Installers</div>
+            <div class="top-details text-center">
+                Speakers are an essential component of any <a class="link">audio system</a>, whether it’s needed for
+                listening to
+                music,
+                watching movies or entertaining guests. But with so many different types of speakers for
+                <a class="link">residential and commercial applications </a>, it can be difficult to determine which
+                ones are right
+                for your customers. This guide will explore the different types of speakers, important speaker specs,
+                the necessary accessories
+                and more.
+            </div>
+
+
+            <div class="row row-buttons">
+                <button> Types of Speakers  </button>
+                <button> Commercial Speakers  </button>
+                <button> Receivers and Amplifiers  </button>
+                <button> Important Speaker Specs  </button>
+                <button> Accessories  </button>
+                <button> Resources  </button>
+            </div>
+        </div>
+
+        <div
             id="speakers"
             class="row"
         >
-            <div class="title-section">Types of Speakers</div>
+            <div
+                class="title-section"
+                style="margin-bottom: 22px; margin-top: 26px;"
+            >Types of Speakers</div>
+            <div
+                class="w-100 row-buttons"
+                style="margin-bottom: 22px;"
+            >
+                <button class="active-button"> Residential Speakers  </button>
+                <button> Commercial Speakers  </button>
+            </div>
         </div>
 
         <div
@@ -59,12 +125,10 @@
             <div class="title-section">Services and Support</div>
         </div>
     </div>
-
-    <script src="./js/components/card.js">
-    </script>
-    <script src="./js/components/cardWithSections.js"></script>
-    <script src="./js/components/smallCard.js"></script>
-    <script src="./js/components/card.js"></script>
+    <script src="./js/components/ImportantSpeakerSpecsCard.js"></script>
+    <script src="./js/components/ReceiversAndAmplifiersCard.js"></script>
+    <script src="./js/components/TypesSpeakersCard.js"></script>
+    <script src="./js/components/ServicesAndSupportCard.js"></script>
     <script src="./js/script.js"></script>
 </body>
 

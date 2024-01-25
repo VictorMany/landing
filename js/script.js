@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: 'Bookshelf',
             details: 'Bookshelf speakers are well-rounded devices that offer a proportional balance of reliable sound quality and performance, while being portable and affordable. These speakers are perfect for customers who want to elevate their sound for casual activities such as listening to music or watching movies. Bookshelf speakers are best suited for small to medium-sized rooms in a home. ',
             applications: 'Living rooms, home theaters, music rooms, gaming rooms, bedrooms',
-            imageUrl: 'https://s3-alpha-sig.figma.com/img/db8f/1d7d/92112eb56a7e630e4fe7fe0ce97b1780?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Zzsm9FLkYou3cr01p3fceuqHf2mMgHMwUQCk2LZXqZbuUdUgevoILhyD4k6KAyB4ZadLiEYDk4uKW6EKGMKJBwwRuCZTdNwf9yFNafB7AaY0TsSmnpdB9fsiAjw5GncFv6M-NM8ghHwnDr~YxKpM~dWWToLo0tWCBc-kjoZs8WFY1IkQ0I1dq4a1hqa0k6qZKa-nu61M0yshSjX0hYWMRbfkMcp0AEr3Se8FI0GqRcSpoW0cntUie-ibpQVNuNYg9F1glMOLBaqSQq4uW4W2qcjuePuUDA0etgpPSa9gnN1vwBAPOiWmmoBECR1EkUmYm8ekrfmgOTNX5YTBVBtShw__',
+            imageUrl: './assets/5.jpeg',
             links: ['Shop', 'Bookshelf', 'Speakers ']
         },
         {
@@ -85,6 +85,10 @@ document.addEventListener('DOMContentLoaded', function () {
             details: 'Maximum Sound Pressure Level (SPL)',
             imageUrl: './assets/8.jpeg',
         },
+        {
+            details: 'Maximum Sound Pressure Level (SPL)',
+            imageUrl: './assets/8.jpeg',
+        },
     ]
 
     const speakerAccessoriesItems = [
@@ -111,26 +115,69 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     ]
 
+    const serviceItems = [
+        {
+            title: 'Outdoor Speakers Features ',
+            details: 'Learn about the different types of all-weather speakers and what to consider when installing them in backyards and outdoor spaces.',
+            imageUrl: './assets/1.jpeg',
+            subtitle: null,
+            links: ['Read More ']
+        },
+        {
+            title: 'Multi-Room Audio Systems ',
+            details: 'Customers are increasingly interested in having multi-room audio in their homes. Read about what multi-room audio is and how these systems work. ',
+            imageUrl: './assets/2.jpeg',
+            subtitle: null,
+            links: ['Read More ']
+        },
+        {
+            title: 'Herman Integration Services ',
+            details: 'Herman Integration Services  Subcontract your AV labor to take on more projects and grow your business with Herman Integration Services. Herman’s technicians and support staff and install your next projector project, provide pre- and post-sales support, program devices and troubleshoot. Learn More',
+            imageUrl: './assets/3.jpeg',
+            subtitle: null,
+            links: ['Read More ']
+
+        },
+        {
+            title: 'Project Registration ',
+            details: 'Register your project with ADI for free and offer your customers the best price for top-performing products and solutions. Get in touch with our Project Registration team today by filling out a short form. ',
+            imageUrl: './assets/4.jpeg',
+            subtitle: null,
+            links: ['Read More ']
+        }
+    ];
+
     var speakersDiv = document.getElementById('speakers');
     speakerItems.forEach(function (item) {
-        speakersDiv.appendChild(createCard(item));
+        speakersDiv.appendChild(createTypeSpeakersCard(item));
     });
 
 
     var amplifiersDiv = document.getElementById('amplifiers');
     amplifierItems.forEach(function (item) {
-        amplifiersDiv.appendChild(createCardWithSections(item));
+        amplifiersDiv.appendChild(createReceiversAndAmplifiersCard(item));
     });
 
 
     var specsDiv = document.getElementById('specs');
     speakerSpecsItems.forEach(function (item) {
-        specsDiv.appendChild(createSmallCard(item));
+        specsDiv.appendChild(createImportantSpeakerSpectsCard(item));
     });
 
 
     var accessoriesDiv = document.getElementById('accessories');
     speakerAccessoriesItems.forEach(function (item) {
-        accessoriesDiv.appendChild(createCardWithSections(item));
+        accessoriesDiv.appendChild(createReceiversAndAmplifiersCard(item));
+    });
+
+    var servicesDiv = document.getElementById('services');
+    serviceItems.forEach(function (item, index) {
+        let card = createServicesAndSupportCard(item);
+        if (index % 2 === 0) {
+            card.classList.add('grey');
+        } else {
+            card.classList.add('white');
+        }
+        servicesDiv.appendChild(card);
     });
 });
