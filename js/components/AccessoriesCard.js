@@ -1,11 +1,8 @@
-// Function to create a card for receivers and amplifiers
 function createAccessoriesCard({ title, sections, details, imageUrl, links }) {
     var card = document.createElement('div');
     card.className = 'column-receivers_amplifiers_cards';
 
-    // Add an image at the top that spans the full width
     card.innerHTML += '<div class="image_receivers_amplifiers" style="background-image: url(' + imageUrl + ');"></div>';
-
     card.innerHTML +=
         '<div class="card__container height-container-accessories">' +
         '<div class="card__content">' +

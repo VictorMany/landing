@@ -29,7 +29,7 @@
         class="container"
     >
         <div
-            class="row top-container"
+            class="section top-container"
             style="margin-bottom: 0;"
         >
             <div
@@ -54,7 +54,7 @@
 
         <div
             id="topDetails"
-            class="row"
+            class="section"
         >
             <div
                 class="title-section"
@@ -73,9 +73,9 @@
             </div>
 
 
-            <div class="row row-buttons">
-                <a href="#speakers"><button>Types of Speakers</button></a>
-                <a href="#speakers"><button>Commercial Speakers</button></a>
+            <div class="section row-buttons">
+                <a href="#section-speakers"><button>Types of Speakers</button></a>
+                <a href="#section-speakers"><button>Commercial Speakers</button></a>
                 <a href="#amplifiers"><button>Receivers and Amplifiers</button></a>
                 <a href="#specs"><button>Important Speaker Specs</button></a>
                 <a href="#accessories"><button>Accessories</button></a>
@@ -84,17 +84,14 @@
             </div>
         </div>
 
-        <div
-            id="speakers"
-            class="row"
-        >
+        <div id="section-speakers">
             <div
                 class="title-section"
                 style="margin-bottom: 22px; margin-top: 26px;"
             >Types of Speakers</div>
             <div
                 class="w-100 row-buttons"
-                style="margin-bottom: 22px;"
+                style="margin-bottom: 22px; gap: 10px"
             >
                 <button
                     class="active-button"
@@ -102,32 +99,38 @@
                 >Residential Speakers</button>
                 <button onclick="toggleActive(this)">Commercial Speakers</button>
             </div>
+            <div
+                class="section"
+                id="speakers"
+            >
+
+            </div>
         </div>
 
         <div
             id="amplifiers"
-            class="row"
+            class="section"
         >
             <div class="title-section">Receivers and Amplifiers</div>
         </div>
 
         <div
             id="specs"
-            class="row"
+            class="section"
         >
             <div class="title-section">Important Speaker Specs </div>
         </div>
 
         <div
             id="accessories"
-            class="row"
+            class="section"
         >
             <div class="title-section">Accessories </div>
         </div>
 
         <div
             id="services"
-            class="row"
+            class="section"
         >
             <div class="title-section">Services and Support</div>
         </div>

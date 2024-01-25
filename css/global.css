@@ -1,7 +1,5 @@
-/* Importa la fuente Nunito Sans desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;700;800&display=swap');
 
-/* Define variables para colores */
 :root {
     --primary-color: #002856;
     --link-color: #006AE3;
@@ -33,7 +31,7 @@ button {
     padding: 8px 16px;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+
     /* TEXT STYLE */
     color: var(--button-text-color);
     text-align: center;
@@ -60,6 +58,12 @@ a {
     height: 100%;
 }
 
+/* Style for links */
+a.link {
+    color: var(--button-color);
+    text-decoration-line: underline;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -68,7 +72,7 @@ a {
     margin: 0 auto;
 }
 
-.row {
+.section {
     display: flex;
     justify-content: start;
     width: 100%;
@@ -78,8 +82,7 @@ a {
 }
 
 .div-row {
-    display: flex;
-    width: 100%;
+    display: row;
 }
 
 .title-section {
@@ -95,6 +98,17 @@ a {
     margin-bottom: 40px;
 }
 
+#section-speakers {
+    background-color: var(--background-light);
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-bottom: 56px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
 .active-button {
     border-radius: 4px;
     border: 1px solid var(--active-button-border-color);
@@ -107,26 +121,36 @@ a {
     padding-bottom: 43px;
 }
 
-#speakers {
-    background-color: var(--background-light);
-    padding-bottom: 56px;
-}
-
 #services {
     padding-left: 130px;
     padding-right: 130px;
     padding-bottom: 50px;
 }
 
+#speakers {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 /*RESPONSIVE*/
 
 @media screen and (max-width: 768px) {
-    .row {
+    .section {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #section-speakers {
         padding-left: 0;
         padding-right: 0;
     }
 
     #services {
+        padding: 10px;
+    }
+
+    .title-section {
+        font-size: 22px;
         padding: 10px;
     }
 }
