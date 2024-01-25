@@ -201,14 +201,8 @@
 @media (max-width: 790px) {
 
     .column-type-speakers-card,
-    .column-receivers_amplifiers_cards {
-        width: 100%;
-    }
-
-    .column-specs-cards {
-        width: 100%;
-    }
-
+    .column-receivers_amplifiers_cards,
+    .column-specs-cards,
     .column-service-cards {
         width: 100%;
     }
